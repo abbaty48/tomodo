@@ -1,0 +1,47 @@
+/* FONTS */
+@import url('https://fonts.googleapis.com/css2?family=Alegreya+Sans:ital,wght@0,100;0,300;0,400;0,500;0,700;0,800;0,900;1,100;1,300;1,400;1,500;1,700;1,800;1,900&display=swap');
+/* RESET */
+@import url('reset.css');
+/* COLORS */
+@import url('colors.css');
+/*  */
+/* SITE STYLES */
+html {
+    font-size: 62.5%;
+}
+
+body {
+    min-height: 100dvh;
+    background-color: var(--color-bg);
+    font: 400 normal 1.2rem/2rem  'Alegreya Sans', Poppins', sans-serif;
+}
+
+svg {
+    vector-effect: non-scaling-stroke;
+}
+
+svg:not(.exclude) {
+    width: 2rem;
+    height: 2rem;
+    fill: var(--color-svg);
+    stroke: var(--color-svg);
+}
+
+.container {
+    margin: 0 auto;
+    width: 90dvw;
+    max-width: 1500px;
+}
+
+::-webkit-scrollbar {
+    width: 8px;
+    background-color: transparent
+}
+
+::-webkit-scrollbar-track {
+    background-color: transparent;
+}
+
+::-webkit-scrollbar-thumb {
+    background: hsla(0, 0%, 0%, 0.067);
+}

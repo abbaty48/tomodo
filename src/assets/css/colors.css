@@ -1,0 +1,21 @@
+:root[theme="light"] {
+    --color-bg: hsl(0, 0%, 95%);
+    --color-svg: hsl(0, 0%, 20%);
+    --color-text: hsl(0, 0%, 27%);
+    --color-title: hsl(102, 49%, 51%);
+    --color-border: hsl(0, 0%, 90%);
+    --color-card-bg: hsl(0, 0%, 98%);
+    --color-selected-svg: hsl(208, 100%, 38%);
+    --color-search-strong: hsl(182, 25%, 50%);
+}
+
+:root[theme="dark"] {
+    --color-bg: hsl(272, 13%, 20%);
+    --color-svg: hsl(335, 64%, 48%);
+    --color-text:hsl(20, 9%, 94%);
+    --color-title: hsl(102, 49%, 51%);
+    --color-border: hsl(219, 6%, 44%);
+    --color-card-bg: hsl(220, 8%, 23%);
+    --color-selected-svg: hsl(184, 26%, 51%);
+    --color-search-strong: hsl(26, 100%, 43%);
+}
