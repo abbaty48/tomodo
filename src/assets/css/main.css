@@ -13,7 +13,16 @@ html {
 body {
     min-height: 100dvh;
     background-color: var(--color-bg);
-    font: 400 normal 1.2rem/2rem  'Alegreya Sans', Poppins', sans-serif;
+    font: 400 normal 1.5rem/2rem 'Alegreya Sans', 'san serif';
+}
+
+button {
+    background-color: transparent;
+    transition: all .4s ease-in;
+    appearance: none;
+    cursor: pointer;
+    outline: none;
+    border: none;
 }
 
 svg {
@@ -44,4 +53,23 @@ svg:not(.exclude) {
 
 ::-webkit-scrollbar-thumb {
     background: hsla(0, 0%, 0%, 0.067);
+}
+
+body>header {
+    display: grid;
+    gap: .3em;
+    grid-auto-rows: 1fr;
+    align-items: center;
+    padding: 1rem .55rem;
+    justify-content: space-between;
+    grid-template-columns: auto 1fr auto;
+    >a {
+        display: flex;
+        gap: .5em;
+        font-weight: bold;
+        font-size: 1.5rem;
+        text-decoration: none;
+        color: var(--color-title);
+    }
+    >[type=toolbar]{ grid-area: 1 / 3;}
 }
