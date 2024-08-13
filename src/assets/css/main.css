@@ -15,6 +15,7 @@ body {
     display: grid;
     min-height: 100dvh;
     grid-template-rows: auto 1fr;
+    color: var(--color-text);
     background-color: var(--color-bg);
     font: 400 normal 1.5rem/2rem 'Alegreya Sans', 'san serif';
 }

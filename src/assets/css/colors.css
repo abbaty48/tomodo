@@ -17,7 +17,7 @@
     --color-title: hsl(102, 49%, 51%);
     --color-border: hsl(0, 0%, 20%);
     --color-card-bg: hsl(0, 0%, 20%);
-    --color-panel: hsla(0, 0%, 27%, 0.53);
+    --color-panel: hsla(0, 0%, 27%, 0.93);
     --color-selected-svg: hsl(184, 26%, 51%);
     --color-search-strong: hsl(26, 100%, 43%);
 }

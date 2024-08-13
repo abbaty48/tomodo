@@ -3,9 +3,10 @@ import { languages, orders } from './utils/utils.js'
 import { html, render, svg } from 'lit-html';
 
 import './components/component.theme_switcher.js';
+import './components/component.rm_carousel.js';
 import "./components/component.lazy_image.js";
 import "./components/component.router.js";
-import  './components/component.svg.js';
+import './components/component.svg.js';
 
 document.addEventListener('DOMContentLoaded', (e) => {
     searchFunction();
@@ -183,7 +184,7 @@ function searchFunction() {
         }
         for (const movie of movies) {
             const li = document.createElement('li');
-            const {id, title, year, rating,summary, genres, torrents, large_cover_image, yt_trailer_code} = movies;
+            const { id, title, year, rating, summary, genres, torrents, large_cover_image, yt_trailer_code } = movies;
             li.setHTMLUnsafe(`
                         <a data-meta="${id}-${yt_trailer_code}">
                             <figure>

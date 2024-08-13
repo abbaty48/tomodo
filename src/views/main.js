@@ -1,5 +1,9 @@
 import { html } from "lit-html";
 export default html `
-    <h1>Homepage main</h1>
-    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Temporibus laborum id facilis ex unde amet nobis ipsum, laudantium voluptatum quaerat! Obcaecati neque numquam in dolores? Dolor totam rerum assumenda architecto!</p>
+<article>
+    <section>
+        <header><h1>Recent Uploads</h1></header>
+        <rm-carousel></rm-carousel>
+    </section>
+</article>
 `
