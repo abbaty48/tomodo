@@ -4,6 +4,8 @@ import { html, render, svg } from 'lit-html';
 
 import './components/component.theme_switcher.js';
 import "./components/component.lazy_image.js";
+import "./components/component.router.js";
+import  './components/component.svg.js';
 
 document.addEventListener('DOMContentLoaded', (e) => {
     searchFunction();

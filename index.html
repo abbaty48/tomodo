@@ -12,9 +12,7 @@
 <body>
     <header>
         <a href="#" target="_top" aria-label="Torrent movies downloader">
-            <svg>
-                <use xlink:href="./src/assets/svgs/site_symbols.svg#logo" />
-            </svg>
+            <bxs-svg icon="logo"></bxs-svg>
             <span>tomodo</span>
         </a>
         <form id="searchForm">
@@ -24,14 +22,10 @@
                     aria-label="Search for any movie here." role="search">
                 <button id="filterButton" type="button" title="Toggle search filtering..."
                     aria-label="Filter the search terms" closed>
-                    <svg>
-                        <use xlink:href="./src/assets/svgs/site_symbols.svg#bx-filter" />
-                    </svg>
+                    <bxs-svg icon="filter"></bxs-svg>
                 </button>
                 <button type="submit" aria-label="Search">
-                    <svg>
-                        <use xlink:href="./src/assets/svgs/site_symbols.svg#bx-search" />
-                    </svg>
+                    <bxs-svg icon="search"></bxs-svg>
                 </button>
             </div>
             <div id="sPanelResult">
@@ -71,6 +65,22 @@
             <theme-switcher></theme-switcher>
         </menu>
     </header>
+    <app-router>
+        <aside slot="aside">
+            <menu>
+                <a view="main" class="active">
+                    <bxs-svg icon="home"></bxs-svg>
+                </a>
+                <a view="downloads">
+                    <bxs-svg icon="download"></bxs-svg>
+                </a>
+                <a view="about">
+                    <bxs-svg icon="about"></bxs-svg>
+                </a>
+            </menu>
+        </aside>
+        <main slot="content"></main>
+    </app-router>
     <script type="module" src="src/lib/app.js"></script>
 </body>
 
