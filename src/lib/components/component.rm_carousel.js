@@ -471,8 +471,6 @@ customElements.define('rm-carousel', class extends HTMLElement {
                 this.$wrapper.style.width = Math.floor(this.$wrapper.firstElementChild.clientWidth * this.$wrapper.childElementCount) + 'px';
             }
         }
-        catch (error) {
-            console.log('Err', error);
-        }
+        catch (error) {}
     }
 });

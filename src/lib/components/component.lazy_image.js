@@ -9,7 +9,7 @@ customElements.define('lazy-image', class extends HTMLElement {
             `<style>
                 @keyframes loading {50% {opacity: 0.2;}}
                 :host {background: #0001;width: auto;height: auto;position:relative;overflow:hidden;}
-                 :host([loading]) {animation: loading 2s infinite ease alternate;}
+                :host([loading]) {animation: loading 2s infinite ease alternate;}
                  img {object-fit: cover;aspect-ratio: 1/1;width:100%;height:100%;}
             </style>`
         );
@@ -29,7 +29,9 @@ customElements.define('lazy-image', class extends HTMLElement {
                         this.$root.append(__img);
                         this.removeAttribute('loading');
                         observer.disconnect()
-                    } catch (error) { }
+                    } catch (error) {
+                        this.setAttribute('loading', true);
+                     }
                 })
             }
         })

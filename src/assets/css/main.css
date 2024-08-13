@@ -4,18 +4,18 @@
 @import url('reset.css');
 /* COLORS */
 @import url('colors.css');
-
 /*  */
 /* SITE STYLES */
 html {
     font-size: 62.5%;
+    scroll-behavior: 'smooth';
 }
 
 body {
     display: grid;
     min-height: 100dvh;
-    grid-template-rows: auto 1fr;
     color: var(--color-text);
+    grid-template-rows: auto 1fr;
     background-color: var(--color-bg);
     font: 400 normal 1.5rem/2rem 'Alegreya Sans', 'san serif';
 }
@@ -59,15 +59,19 @@ bxs-svg {pointer-events: none;}
 }
 
 ::-webkit-scrollbar-thumb {
-    background: hsla(0, 0%, 0%, 0.067);
+    background: hsla(0, 0%, 0%, 0.30);
 }
 
 body>header {
-    display: grid;
+    top: 0;
+    z-index: 1;
     gap: .3em;
+    display: grid;
+    position: sticky;
     grid-auto-rows: 1fr;
     align-items: center;
     padding: 1rem .55rem;
+    background: var(--color-bg);
     justify-content: space-between;
     grid-template-columns: auto 1fr auto;
 
@@ -305,10 +309,11 @@ body>header {
 body>app-router {
     >aside {
         >menu {
-            display: flex;
+            top: 80px;
             gap: 2em;
+            display: flex;
             width: 4.5rem;
-            height: 100%;
+            position: sticky;
             margin: 0 .5em;
             padding: 2em 0;
             align-items: center;
@@ -329,6 +334,10 @@ body>app-router {
 
                 &:active {
                     scale: .8;
+                }
+                &:hover {
+                    opacity: .6;
+                    background: var(--color-card-bg);
                 }
 
                 &.active {
